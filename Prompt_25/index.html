@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .toggle-password {
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-r from-orange-400 to-yellow-500 h-screen flex items-center justify-center">
+
+  <div class="bg-white p-8 rounded-lg shadow-lg w-96">
+    <h2 class="text-3xl font-bold text-center text-orange-600 mb-6">Login</h2>
+
+    <form action="#" method="POST">
+    
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700 font-semibold mb-2">Email</label>
+        <input type="email" id="email" name="email" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+      </div>
+
+      <div class="mb-4 relative">
+        <label for="password" class="block text-gray-700 font-semibold mb-2">Password</label>
+        <input type="password" id="password" name="password" class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500" required>
+       
+        <span id="toggle-password" class="absolute top-1/2 right-3 transform -translate-y-1/2 text-gray-600 toggle-password">
+          <i class="fas fa-eye"></i> 
+        </span>
+      </div>
+
+      <button type="submit" class="w-full bg-orange-600 text-white py-3 rounded-lg hover:bg-orange-700 transition duration-300">Login</button>
+
+      <div class="mt-4 text-center">
+        <a href="#" class="text-sm text-orange-600 hover:underline">Forgot Password?</a>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    
+    const togglePassword = document.getElementById('toggle-password');
+    const passwordField = document.getElementById('password');
+
+    togglePassword.addEventListener('click', function() {
+      const type = passwordField.type === 'password' ? 'text' : 'password';
+      passwordField.type = type;
+
+      
+      togglePassword.innerHTML = type === 'password'
+        ? '<i class="fas fa-eye"></i>'  
+        : '<i class="fas fa-eye-slash"></i>'; 
+    });
+  </script>
+
+</body>
+</html>

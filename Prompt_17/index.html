@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Birds of the World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        body {
+          font-family: "Poppins", sans-serif;
+        }
+        h1,
+        h2 {
+          font-family: "Playfair Display", serif;
+        }
+        p {
+          font-family: "Dancing Script", cursive;
+        }
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-b from-blue-200 via-white to-blue-100 text-gray-800"
+  >
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-green-500 text-white py-8">
+      <div class="max-w-5xl mx-auto text-center">
+        <h1 class="text-5xl font-bold">Birds of the World</h1>
+        <p class="mt-4 text-lg">
+          Discover the beauty and diversity of birds from around the globe.
+        </p>
+      </div>
+    </header>
+
+    <!-- Blog Content -->
+    <main class="max-w-5xl mx-auto py-12 px-6 space-y-12">
+      <!-- Bird 1: Peacock -->
+      <section class="flex flex-col md:flex-row items-center gap-6">
+        <img
+          src="./img/peacock.avif"
+          alt="Peacock"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="text-center md:text-left space-y-4">
+          <h2 class="text-3xl font-semibold text-blue-700">Peacock</h2>
+          <p class="text-lg">
+            The peacock is known for its dazzling feathers, which create a
+            mesmerizing display during courtship. Native to South Asia, these
+            birds symbolize beauty and grace.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-600">
+            <li><strong>Scientific Name:</strong> Pavo cristatus</li>
+            <li><strong>Habitat:</strong> Forests and grasslands</li>
+            <li><strong>Diet:</strong> Seeds, insects, and plants</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Bird 2: Bald Eagle -->
+      <section
+        class="flex flex-col md:flex-row items-center gap-6 md:flex-row-reverse"
+      >
+        <img
+          src="./img/baldeagle-002.jpg"
+          alt="Bald Eagle"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="text-center md:text-left space-y-4">
+          <h2 class="text-3xl font-semibold text-blue-700">Bald Eagle</h2>
+          <p class="text-lg">
+            The bald eagle is a symbol of freedom and strength in the United
+            States. With its piercing eyes and majestic wingspan, it is a true
+            predator of the skies.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-600">
+            <li><strong>Scientific Name:</strong> Haliaeetus leucocephalus</li>
+            <li><strong>Habitat:</strong> Near water bodies and open areas</li>
+            <li><strong>Diet:</strong> Fish, small mammals, and carrion</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Bird 3: Parrot -->
+      <section class="flex flex-col md:flex-row items-center gap-6">
+        <img
+          src="./img/istockphoto-924926702-612x612.jpg"
+          alt="Parrot"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="text-center md:text-left space-y-4">
+          <h2 class="text-3xl font-semibold text-blue-700">Parrot</h2>
+          <p class="text-lg">
+            Known for their vibrant colors and intelligence, parrots are social
+            birds that can mimic sounds and even human speech. They are found in
+            tropical regions around the world.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-600">
+            <li><strong>Scientific Name:</strong> Psittaciformes</li>
+            <li><strong>Habitat:</strong> Rainforests and woodlands</li>
+            <li><strong>Diet:</strong> Fruits, seeds, and nuts</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Bird 4: Penguin -->
+      <section
+        class="flex flex-col md:flex-row items-center gap-6 md:flex-row-reverse"
+      >
+        <img
+          src="./img/GettyImages-960007644-5b1f1f6e041441a685d8d7bcaa8d2ae0.jpg"
+          alt="Penguin"
+          class="w-full md:w-1/2 rounded-lg shadow-lg"
+        />
+        <div class="text-center md:text-left space-y-4">
+          <h2 class="text-3xl font-semibold text-blue-700">Penguin</h2>
+          <p class="text-lg">
+            Penguins are flightless birds that are perfectly adapted to life in
+            the water. Found in the Southern Hemisphere, they are known for
+            their playful waddling and sleek swimming.
+          </p>
+          <ul class="list-disc pl-6 space-y-2 text-gray-600">
+            <li><strong>Scientific Name:</strong> Spheniscidae</li>
+            <li>
+              <strong>Habitat:</strong> Antarctic regions and nearby islands
+            </li>
+            <li><strong>Diet:</strong> Fish and krill</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-to-r from-blue-600 to-green-500 text-white py-8">
+      <div class="text-center">
+        <p class="text-lg">
+          Explore the amazing world of birds and their fascinating lives!
+        </p>
+        <a
+          href="#"
+          class="mt-4 inline-block bg-white text-blue-600 px-8 py-3 rounded-full font-semibold shadow-lg hover:scale-105 transition"
+        >
+          Learn More
+        </a>
+      </div>
+    </footer>
+  </body>
+</html>

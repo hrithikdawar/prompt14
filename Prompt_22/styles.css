@@ -1,0 +1,13 @@
+ustom styles */
+.step:not(.active) {
+    display: none;
+}
+
+.stepIndicator.active {
+    color: #0d9488;
+    font-weight: 600;
+}
+.stepIndicator.finish {
+    color: #f97316;
+    font-weight: 600;
+}

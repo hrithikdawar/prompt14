@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Digital Event Flyer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&family=Orbitron:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @layer base {
+        body {
+          font-family: "Poppins", sans-serif;
+        }
+        h1,
+        h2 {
+          font-family: "Orbitron", sans-serif;
+        }
+      }
+
+      .text-neon-blue {
+        color: #00ffff;
+      }
+      .text-neon-green {
+        color: #32cd32;
+      }
+      .text-neon-pink {
+        color: #ff1493;
+      }
+      .bg-neon-blue {
+        background-color: #00ffff;
+      }
+      .bg-neon-green {
+        background-color: #32cd32;
+      }
+    </style>
+  </head>
+  <body
+    class="bg-gradient-to-br from-black via-gray-900 to-gray-800 text-white min-h-screen flex items-center justify-center p-4"
+  >
+    <div
+      class="bg-gray-900 rounded-xl shadow-xl overflow-hidden max-w-4xl w-full"
+    >
+      <header class="bg-black text-center py-8">
+        <h1 class="text-5xl font-bold text-neon-blue uppercase tracking-wider">
+          Tech Ignite 2024
+        </h1>
+        <p class="text-lg mt-4 text-gray-400">
+          Unleashing Innovation for the Future
+        </p>
+      </header>
+
+      <section class="p-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="space-y-6">
+          <h2 class="text-3xl font-semibold text-neon-green">Event Features</h2>
+          <ul class="list-none text-gray-300 space-y-2">
+            <li>💡 Keynote by Industry Leaders</li>
+            <li>🔧 Hands-on Coding Workshops</li>
+            <li>🚀 AI, Blockchain, and Metaverse Demos</li>
+            <li>🎤 Tech Talk Sessions & Networking</li>
+          </ul>
+          <div>
+            <h2 class="text-2xl font-semibold text-neon-pink">Event Details</h2>
+            <p class="mt-2 text-gray-400">
+              📅 <strong>Date:</strong> May 20-22, 2024<br />
+              📍 <strong>Location:</strong> Digital Innovation Hub<br />
+              🎟️ <strong>Tickets:</strong> Early Bird Offer Ends Soon!
+            </p>
+          </div>
+        </div>
+
+        <div class="relative">
+          <img
+            src="./img/istockphoto.jpg"
+            alt="Event Visual"
+            class="rounded-lg shadow-md w-full h-full object-cover"
+          />
+        </div>
+      </section>
+
+      <div class="bg-gray-800 text-center py-6">
+        <a
+          href="#"
+          class="bg-neon-blue text-black px-10 py-3 rounded-lg text-lg font-bold uppercase hover:bg-neon-green transition duration-300"
+        >
+          Reserve Your Spot
+        </a>
+        <p class="mt-4 text-gray-400 text-sm">
+          Hurry! Limited Seats Available.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
